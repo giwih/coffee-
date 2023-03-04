@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../../../программы/pyqt"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "сайт капслоком",
+		"liveshare.accessibility.accessibilityFeaturesEnabled": "auto"
+	}
+}

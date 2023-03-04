@@ -1,0 +1,219 @@
+html{
+    background-color: #141414;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #db382c;
+    color: #fff;
+}
+
+.headers {
+    background-color: rgb(119, 119, 119);
+    position: fixed;
+    width: 100%;
+    transition: 0.5s;
+    z-index: +1;
+
+}
+#glow {
+    background-color: #c978dd;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 18px 10%;
+    margin-left:-10%;
+    text-align: center;
+    font-size: 120px; 
+    font-weight: bold;
+    position: absolute;
+    top: -95px;
+    width: 100%;
+    transition: 0.3s;
+    text-shadow: 18px 15px 15px rgba(31, 31, 31, 0.2);
+    z-index: 0;
+    user-select: none;
+}
+#underglow {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 70px;
+    position: relative;
+    top: 255px;
+    right: 0%;
+    color: white;
+    transition: 2s;
+    padding: 0%;
+    margin: 0%;
+    opacity: .999;
+}
+#alpha {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 70px;
+    position: relative;
+    top: 255px;
+    right: 0%;
+    color: rgb(128, 128, 128);
+    transition: 2s;
+    padding: 0%;
+    margin: 0%;
+    opacity: .999;
+}
+#soon {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 120px;
+    position: relative;
+    text-shadow: 18px 15px 15px rgba(31, 31, 31, 0.2);
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	font-size: 120px;
+	animation: flow 5s ease-in-out infinite;
+	background: linear-gradient(-60deg, #a81a2d, #66006d, #e73c7e, #da4011, #cadb2c);
+	background-size: 300%;
+	position: relative;
+	user-select: none;
+	top: 400px;
+	left: 0px;
+
+	-webkit-background-clip: text;
+		background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+@keyframes flow {
+	0% {
+		background-position: 0 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+
+	}
+
+	100% {
+		background-position: 0 50%;
+	}
+}
+#cch {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    top: 660px;
+    color: #fff;
+}
+/* #dowloand_img {
+    position: relative;
+	top: 15000px;
+	left: 100px;
+    user-select: none;
+} */
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 100vh;
+    width: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4b4b4b;
+    transition: 0.5s;
+    transform: translateX(-100%);
+}
+.menu_active {
+    transform: translateX(0%);
+}
+.menu-list {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+    font-size: 30px;
+    
+}
+
+.color_link {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.menu-list a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+#menu-b {
+    transition: 0.3s;
+    width: 40px;
+    height: 40px;
+    background-color: #4b4b4b;
+    transform: translate(-10px, 0px);
+    position: absolute;
+    right: -60px;
+    top: 10px;
+    border-radius: 50%;
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%; 
+    margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+    content: '';
+    display: block;
+    transition: 0.5s;
+}
+.menu-btn span::before {
+    transform: translateY(-5px);
+}
+.menu-btn span::after {
+    transform: translateY(5px);
+}
+
+.content_active {
+    transform: translateX(14%);
+}
+
+.menu-btn_active span:before {
+    transform: rotate(-35deg);
+    width: 10px;
+    transform-origin: left bottom;
+}
+.menu-btn_active span:after {
+    transform: rotate(35deg);
+    width: 10px;
+    transform-origin: left top;
+}
+.element-animation {
+    color: #fff;
+    margin: 2rem 0;
+    font-size: 3rem;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 2s;
+    transform: translateY(0%);
+}
+
+#gl_menu:hover {
+    color: #9872d6;
+    transition: 0.5s;
+    font-size:36px;
+    
+}
+#st_menu {
+    color: #8345e7;
+    transition: 0.5s;  
+} 
