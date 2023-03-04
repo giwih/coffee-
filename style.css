@@ -1,0 +1,111 @@
+html{
+	background: linear-gradient(to top, rgb(122, 122, 122), #fff)
+  }
+  
+#header {
+	text-shadow: 18px 15px 15px rgba(31, 31, 31, 0.2);
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	font-size: 120px;
+	animation: flow 5s ease-in-out infinite;
+	background: linear-gradient(-60deg, #a81a2d, #66006d, #e73c7e, #da4011, #cadb2c);
+	background-size: 300%;
+	position: relative;
+	user-select: none;
+	top: 200px;
+	left: 0px;
+
+	-webkit-background-clip: text;
+		background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+@keyframes flow {
+	0% {
+		background-position: 0 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+
+	}
+
+	100% {
+		background-position: 0 50%;
+	}
+}
+
+#best {
+	text-shadow: 18px 15px 15px rgba(31, 31, 31, 0.2);
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	color: #504f4f;
+	position: relative;
+	top: 200px;
+	left: 0px;
+}
+
+::selection {
+    background-color: #db382c;
+    color: #fff;
+}
+
+.steam:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	transform: scale(1.2);
+	border-radius: 15px;
+}
+
+.steam {
+    box-shadow: 10px 20px 20px 15px rgba(70, 70, 70, 0.2);
+    transition: 0.5s;
+    border-radius: 15px;
+	max-width: 250px;
+    margin: auto;
+	position: relative;
+	top: 550px;
+	left: -300px;
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+	
+}
+
+/*Вторая*/
+.anti:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	transform: scale(1.2);
+}
+
+.anti {
+    box-shadow: 10px 20px 20px 15px rgba(70, 70, 70, 0.2);
+    transition: 0.5s;
+    border-radius: 5px; /* 5px rounded corners */
+	max-width: 250px; /* Ограничение ширины */
+    margin: auto;
+    text-align: center;
+	position: relative;
+	top: 160px;
+	left: 0px;
+}
+
+/*3*/
+.win12:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	transform: scale(1.2);
+}
+.win12 {
+    box-shadow: 10px 20px 20px 15px rgba(70, 70, 70, 0.2);
+    transition: 0.5s;
+    border-radius: 5px; /* 5px rounded corners */
+	max-width: 250px; /* Ограничение ширины */
+    margin: auto;
+    text-align: center;
+	position: relative;
+	top: -230px;
+	left: 300px;
+}
+#cch {
+	text-shadow: 18px 15px 15px rgba(31, 31, 31, 0.2);
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	color: #000000;
+}
